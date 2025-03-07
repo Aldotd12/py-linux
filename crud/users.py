@@ -16,6 +16,10 @@ def get_user(db: Session, user_id: int):
     """Obtiene un usuario por su ID."""
     return db.query(user_model.User).filter(user_model.User.id == user_id).first()
 
+def get_user_by_email(db: Session, user_email: int):
+    """Obtiene un usuario por su email."""
+    return db.query(user_model.User).filter(user_model.User.email == user_email).first()
+
 def create_user(db: Session, user: user_schema.userCreate):
     """Crea un nuevo usuario en la base de datos."""
     db_user = user_model.User(
