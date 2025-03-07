@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Pac",
+    "last_name": "Panch",
+    "type_user": "Student",
+    "user_name": "PacPanch",
+    "email": "PacPanch@gmail.com",
+    "password": "12345678",
+    "phone_number": "7761001000",
+    "status": "Active",
+    "registration_date": "2023-10-01T12:00:00",
+    "update_date": "2023-10-01T12:00:00"
+  },
+  {
+    "material_type": "DesarmadoresS2S",
+    "brand": "Truper",
+    "model": "Cruz",
+    "state": "Available"
+  },
+  {
+    "id_user": 1,
+    "id_material": 1,
+    "loan_date": "2023-10-01T12:00:00",
+    "return_date": "2023-10-01T12:00:00",
+    "status": "Active"
+  }
+]
