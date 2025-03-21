@@ -10,7 +10,7 @@ origins = [
 ]
 
 app = FastAPI(
-    title="API ALDOTD12 ",
+    title="API  ",
     description="API de pruebas con rutas protegidas "
 )
 
@@ -18,7 +18,7 @@ app = FastAPI(
 security = HTTPBearer()
 
 # Registrar rutas (agregar autenticación solo en rutas protegidas)
-app.include_router(user, dependencies=[Depends(security)])
+app.include_router(user)
 app.include_router(auth_router)  
 app.include_router(material)
 app.include_router(loan)
